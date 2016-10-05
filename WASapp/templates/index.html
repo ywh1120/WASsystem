@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Wiltse Hospital Authentification</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{% load static %}
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}"/>
+		<link rel="stylesheet" href="{% static 'assets/css/graph.css' %}"/>
+		<link rel="stylesheet" href="{% static 'assets/css/ggraphic.css' %}"/>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="{% static 'images/wiltse_icon.png' %}" alt="" /></span>
+							<h1 id="title">Wiltse Memorial Hospital</h1>
+							<p>Authentification</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#firstintro" id="graph-link" class="skel-layers-ignoreHref" style="text-align:left">개요</a></li>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref" style="text-align:left">윌스기념병원미션&비전</a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref" style="text-align:left">환자의 권리와 의무</a></li>
+								<li>
+								<a href="#about" id="no1-link" class="skel-layers-ignoreHref" style="text-align:left">1장</a>
+									<ul style="display:none">
+										{% for pdfdata in list %}
+									    <li style="font-size:15px;text-align:left;padding-left:50px;border-bottom:solid 1px">
+									      <a href="/uploads/{{ pdfdata.pdffile }}" id="embedURL">{{ pdfdata.title }}</a>
+									    </li>
+									    {% endfor %}
+									    
+									</ul>
+								</li>
+								<li>
+								<a href="#contact" id="no2-link" class="skel-layers-ignoreHref" style="text-align:left">2장</a>
+									<ul style="display:none">
+									    <li style="font-size:15px;text-align:left;padding-left:50px;">
+									      W-02-01 질향상 운영체계
+									    </li>
+									    <li style="font-size:15px;text-align:left;padding-left:50px;">
+									      W-02-02 부서 질향상 활동
+									    </li>
+									    <li style="font-size:15px;text-align:left;padding-left:50px;">
+									      W-02-03 환자안전 보고체계
+									    </li>
+									    <li style="font-size:15px;text-align:left;padding-left:50px;">
+									      W-02-04 지표관리체계
+									    </li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+
+				</div>
+<!-- 
+				<div class="bottom">
+
+					<!-- Social Icons 
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+-->
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+			
+					<section id="firstintro" >
+						<div class="container" id="wrapper">
+<header>
+<h2 class="gra">지표</h2>
+</header>
+<div class="chart">
+				
+				<table class="data-table" border="1" cellpadding="10" cellspacing="0" summary="The effects of the zombie outbreak on the populations of endangered species from 2012 to 2016">
+					<caption>낙상 발생률</caption>
+					<thead>
+						<tr>
+							<td>&nbsp;</td>
+							<th scope="col">2012</th>
+							<th scope="col">2013</th>
+							<th scope="col">2014</th>
+							<th scope="col">2015</th>
+							
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Carbon Tiger</th>
+							<td>7080</td>
+							<td>6080</td>
+							<td>6240</td>
+							<td>3520</td>
+							
+							
+						</tr>
+						<tr>
+							<th scope="row">Blue Monkey</th>
+							<td>5680</td>
+							<td>6880</td>
+							<td>5760</td>
+							<td>5120</td>
+							
+							
+						</tr>
+						<tr>
+							<th scope="row">Tanned Zombie</th>
+							<td>1040</td>
+							<td>1760</td>
+							<td>2880</td>
+							<td>4720</td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			
+						</div>
+					</section>
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">윌스기념병원 미션&비전</h2>
+								<p>Ligula scelerisque justo sem accumsan diam quis<br />
+								vitae natoque dictum sollicitudin elementum.</p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>환자의 권리와 의무</h2>
+							</header>
+
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
+							fusce hendrerit lacus ridiculus.</p>
+
+							
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>1장</h2>
+							</header>
+
+							<div class="4u$ 12u$(mobile)">
+									{% for pdfdata in list %}
+									<article class="item">
+									<!-- http://127.0.0.1:8000/uploads/content/r-tree/Gut84.pdf-->
+										<a href="/uploads/{{ pdfdata.pdffile }}" id="embedURL"><img src="/uploads/{{ pdfdata.pdffile }}" style="width:290px;height:240px"/></a>
+										<!-- <a href="/uploads/{{ pdfdata.pdffile }}" id="embedURL">Sample PDF at samplepdf.com</a> -->
+										<header>
+											<h3>{{ pdfdata.title }}</h3>
+										</header>
+									</article>
+									{% endfor %}
+								</div>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>2장</h2>
+							</header>
+
+							<p>Elementum sem parturient nulla quam placerat viverra
+							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+
+							
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrollzer.min.js' %}"></script>
+			<script src="{% static 'assets/js/skel.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="{% static 'assets/js/main.js' %}"></script>
+			<script type="text/javascript" src="{% static 'jquery.gdocsviewer.min.js'%}"></script>
+			<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+			<script src="{% static 'js/graph.js' %}">
+			<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css">
+			
+		<script type="text/javascript"> 
+		/*<![CDATA[*/
+		$(document).ready(function() {
+			//$('a.embed').gdocsViewer({width: 300, height: 300});
+			//$('#embedURL').gdocsViewer();
+		});
+		/*]]>*/
+		
+		$(function(){
+			//alert('test');
+			$("#nav #no1-link").click(function(){
+				$("#nav ul ul").slideUp();
+				if(!$(this).next().is(":visible"))
+				{
+					$(this).next().slideDown();
+				}
+			});
+			$("#nav #no2-link").click(function(){
+				$("#nav ul ul").slideUp();
+				if(!$(this).next().is(":visible"))
+				{
+					$(this).next().slideDown();
+				}
+			});
+			$("#dialog").dialog({
+                autoOpen:false, //자동으로 열리지않게
+                position:[100,200], //x,y  값을 지정
+                //"center", "left", "right", "top", "bottom"
+                modal:true, //모달대화상자
+                resizable:false, //크기 조절 못하게
+                
+                buttons:{
+                    "확인":function(){
+                        $(this).dialog("close");
+                    },"취소":function(){
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+            //창 열기 버튼을 클릭했을경우
+            $("#btn").on("click",function(){
+                $("#dialog").dialog("open"); //다이얼로그창 오픈                
+            });
+
+		})
+		</script>
+	</body>
+</html>
